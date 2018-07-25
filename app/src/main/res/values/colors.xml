@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0197F6</color>
+    <color name="colorPrimaryDark">#150578</color>
+    <color name="colorAccent">#FB5012</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="actionBarColorText">#FFFFFF</color>
+    <color name="darkBlue">#150578</color>
+    <color name="mediumBlue">#0197F6</color>
+    <color name="lightBlue">#DDFFF7</color>
+    <color name="green">#BAFF29</color>
+    <color name="greenBlue">#25CED1</color>
+    <color name="orange">#FB5012</color>
+    <color name="red">#A30000</color>
+    <color name="pink">#FF3864</color>
+    <color name="background">#F7F7F7</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="mediumGray">#919098</color>
+</resources>

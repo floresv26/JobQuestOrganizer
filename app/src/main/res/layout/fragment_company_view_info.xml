@@ -1,0 +1,169 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.floresmurillo.jobquestorganizernavigation.CompanyViewInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/company_read_companyName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Google"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/company_read_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="www.google.com"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:linksClickable="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/company_read_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1600 Amphitheatre Parkway"
+                android:textSize="14sp"
+                android:lines="4"
+                android:clickable="true"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/colorPrimary" />
+
+            <!--<TextView
+                android:id="@+id/company_read_address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1600 Amphitheatre Parkway"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/company_read_address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/company_read_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mountain View,"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/company_read_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CA"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@+id/company_read_city"
+                    android:layout_marginLeft="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/company_read_zip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="94043"
+                android:textSize="14sp" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/company_read_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(630) 217-2345"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/company_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:clickable="true"
+                    android:layout_centerVertical="true" />
+
+                <Button
+                    android:id="@+id/company_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:textColor="@color/white"
+                    android:background="@color/colorAccent"
+                    android:layout_toRightOf="@+id/company_delete"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="start"
+                    android:clickable="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

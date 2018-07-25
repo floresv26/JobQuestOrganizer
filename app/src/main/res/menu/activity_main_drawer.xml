@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menu_home"
+            android:title="Home">
+        </item>
+        <item
+            android:id="@+id/nav_top_list"
+            android:icon="@drawable/building"
+            android:title="My Top Companies" />
+        <item
+            android:id="@+id/nav_companies"
+            android:icon="@drawable/building"
+            android:title="Companies" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/contacts"
+            android:title="Contacts" />
+        <item
+            android:id="@+id/nav_applications"
+            android:icon="@drawable/application"
+            android:title="Applications" />
+        <item
+            android:id="@+id/nav_interviews"
+            android:icon="@drawable/interview"
+            android:title="Interviews" />
+    </group>
+</menu>

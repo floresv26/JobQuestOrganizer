@@ -1,0 +1,458 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.floresmurillo.jobquestorganizernavigation.InterviewAddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:paddingBottom="50dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/building"
+                    android:layout_centerVertical="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/interview_companyName_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv1">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/interview_companyName"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:hint="Company Name"
+                        android:textSize="16sp"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/mediumGray"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/web"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/interview_position_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv2">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/interview_position"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:hint="Position"
+                        android:inputType="textCapWords"
+                        android:textSize="16sp"
+                        android:textColor="@color/mediumGray"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/person"
+                    android:layout_centerVertical="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv3">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/interview_interviewer"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:textSize="16sp"
+                        android:hint="Interviewer"
+                        android:textColor="@color/mediumGray"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/event"
+                    android:layout_centerVertical="true"/>
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="75dp"
+                    android:layout_toRightOf="@id/iv4">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/interview_month_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/interview_month"
+                            android:layout_width="60dp"
+                            android:layout_height="48dp"
+                            android:hint="Month"
+                            android:inputType="date"
+                            android:textSize="16sp"
+                            android:textColor="@color/mediumGray"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="16dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/interview_day_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/interview_month_input">
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/interview_day"
+                            android:layout_width="60dp"
+                            android:layout_height="48dp"
+                            android:hint="Day"
+                            android:inputType="date"
+                            android:textSize="16sp"
+                            android:textColor="@color/mediumGray"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="16dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/interview_year_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/interview_day_input">
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/interview_year"
+                            android:layout_width="60dp"
+                            android:layout_height="48dp"
+                            android:hint="Year"
+                            android:inputType="date"
+                            android:textSize="16sp"
+                            android:textColor="@color/mediumGray"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="16dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/time"
+                    android:layout_centerVertical="true"/>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toRightOf="@id/iv5">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/interview_hour_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true">
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/interview_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:text="12" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/time_splitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="17sp"
+                        android:layout_toRightOf="@id/interview_hour_input"
+                        android:layout_centerVertical="true"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/interview_minute_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_toRightOf="@id/time_splitter"
+                        android:layout_centerVertical="true">
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/interview_minute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:text="00" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/time_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_toRightOf="@+id/interview_minute_input"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"
+                    android:layout_centerVertical="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv6">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/interview_address1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Address 1"
+                        android:textSize="16sp"
+                        android:inputType="textPostalAddress"
+                        android:textColor="@color/mediumGray"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv7">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/interview_address2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Address 2"
+                        android:textSize="16sp"
+                        android:inputType="textPostalAddress"
+                        android:textColor="@color/mediumGray"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv8">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/interview_city"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:hint="City"
+                        android:inputType="textPostalAddress"
+                        android:textColor="@color/mediumGray"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv9">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/interview_state"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="State"
+                        android:textSize="16sp"
+                        android:inputType="textPostalAddress"
+                        android:textColor="@color/mediumGray"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv10">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/interview_zip"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Zip"
+                        android:textSize="16sp"
+                        android:inputType="number"
+                        android:textColor="@color/mediumGray"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv11">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/interview_details"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:textSize="16sp"
+                        android:hint="Details"
+                        android:textColor="@color/mediumGray"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="16dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:clickable="true"
+                    android:layout_centerVertical="true"/>
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:layout_toRightOf="@id/cancel_button"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

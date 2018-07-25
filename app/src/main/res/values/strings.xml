@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Job Quest Organizer Navigation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="calendar">Calendar</string>
+    <string name="list">Top Companies</string>
+    <string name="companies">Companies</string>
+    <string name="contacts">Contacts</string>
+    <string name="applications">Applications</string>
+    <string name="interviews">Interviews</string>
+
+    <string-array name="motivation_array">
+        <item>Motivation</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="time_array">
+        <item>PM</item>
+        <item>AM</item>
+    </string-array>
+
+    <string name="getting_started">The purpose of Job Quest Organizer is to keep yourself organized
+                during your job search process. In the menu, you will see a list of activities you
+                can complete beginning with making a list of your Top Companies, all the way through
+                keeping track of any Applications you have filled out and which you have received
+                Interviews for. You can also set reminders to notify you of application deadlines,
+                interview dates and times, or when to send follow-up emails.</string>
+    <string name="top_companies">Start by making a list of your top 50 companies. At this point all
+                you need to do is write down names. Once you get your 50, or as close as possible to 50.
+                Then you check whether or not you can obtain a contact for that company, usually by
+                checking on LinkedIn. The next step is to determine the your level of motivation for
+                working at that company. The last step is to check the company website for available
+                positions.</string>
+    <string name="maintenance">After creating your list of top companies, you want to store information
+                on those companies, any contacts you may have with those companies, whether or not you
+                have applied to any open positions, and if you have received an interview for those applications.</string>
+
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.floresmurillo.jobquestorganizernavigation.TopCompanyAddFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/topCompany_company_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/topCompany_company"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:hint="Company Name"
+                android:textSize="16sp"
+                android:inputType="textCapWords"
+                android:textColor="@color/mediumGray" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_centerVertical="true"/>
+
+            <CheckBox
+                android:id="@+id/topCompany_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv1"
+                android:layout_marginLeft="15dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motivation"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_centerVertical="true"/>
+
+            <Spinner
+                android:id="@+id/topCompany_motivation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv2"
+                android:layout_marginLeft="15dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Positions"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_centerVertical="true"/>
+
+            <CheckBox
+                android:id="@+id/topCompany_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv3"
+                android:layout_marginLeft="15dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:clickable="true"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_toRightOf="@id/cancel_button"
+                android:layout_marginLeft="50dp"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
